@@ -13,17 +13,17 @@ ___
 
 @st.cache
 def load_rescue_data():
-    data = pd.read_csv('Rescue1122/data.csv')
+    data = pd.read_csv('data/data.csv')
     return data
 
 @st.cache
 def load_punjab_data():
-    data = gpd.read_file('Rescue1122/punjab_data_final.geojson')
+    data = gpd.read_file('data/punjab_data_final.geojson')
     return data
 
 @st.cache
 def load_punjab_data_csv():
-    data = pd.read_csv('Rescue1122/punjab_data_final.csv')
+    data = pd.read_csv('data/punjab_data_final.csv')
     return data
 
 # data_load = st.text("Loading data...")
@@ -81,3 +81,17 @@ value = df[df['district']==district].index
 val = df.loc[value]
 x = val.drop('geometry', axis=1)
 st.table(x.T.squeeze())
+
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("")
+st.sidebar.text("Created by: Ahsan Fayyaz")
