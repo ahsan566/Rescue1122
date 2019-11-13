@@ -4,8 +4,9 @@ import numpy as np
 import geopandas as gpd
 import matplotlib.pyplot as plt
 
-st.title('Rescue 1122 Operations data')
+st.title('Rescue 1122 data explorer')
 st.header('From 2004 to 2018')
+st.write('Source: ' + 'http://www.datastories.pk/download/rescue-data-1122-10-10-2004-07-11-2018/' )
 # st.text('_______________________________________________________')
 '''
 ___
@@ -31,6 +32,8 @@ df = load_punjab_data()
 df2 = load_punjab_data_csv()
 # data_load.text("Loading data... done!")
 
+st.sidebar.text("Created by: Ahsan Fayyaz")
+st.sidebar.text("")
 st.sidebar.title('Options')
 
 st.sidebar.text("")
